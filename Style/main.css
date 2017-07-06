@@ -8,6 +8,7 @@ body {
   background-color: #f8da59;
   background-image: url("../images/js.gif");
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   height: 950px;
@@ -67,23 +68,6 @@ header nav a {
   color: black;
 }
 
-<<<<<<< HEAD
-header nav button {
-  height: 5vw;
-  margin-left: 0;
-  padding: 10px;
-  border-width: 0 1px 0 0;
-  border-color: #eee;
-  background-color: white;
-  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.5vw;
-  font-weight: 500;
-  color: default;
-}
-
-header nav img {
-  height: 5vw;
-=======
 header nav a button {
   background-color: white;
   border-width: 0 1px 0 0;
@@ -97,16 +81,11 @@ header nav a button {
 
 header nav img {
   height: 5.5vw;
->>>>>>> master
 }
 
 @media (max-width: 540px) {
   header nav img {
-<<<<<<< HEAD
-    height: 30px;
-=======
     height: 34px;
->>>>>>> master
   }
 }
 
