@@ -37,14 +37,20 @@ body
                 display: inline
 
 .name
-    +font($fonts,3.5rem,#3b3b5f,600)
+    font-size: 3vw
+    @media (max-width: 540px)
+        font-size: 20px
+
+    @media (min-resolution: 200dpi) and (max-width: 720px)
+        font-size: 5vw
 
 header
     position: relative
-    height: 5rem
     width: 100%
     background-color: white
 
 #main-content
     height: 2000px
     background-color: green
+    margin-top: 16px
+    margin-bottom: 16px
