@@ -8,6 +8,7 @@ body {
   background-color: #f8da59;
   background-image: url("../images/js.gif");
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   height: 950px;
