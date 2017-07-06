@@ -1,14 +1,54 @@
-$fonts: Helvetica, Arial, "Lucida Grande", sans-serif
+@font-face 
+    font-family: Ul
+    src: url(./Comme-ExtraLight.ttf)
+
 =font($family,$size,$color)
     font-family: $family
     font-size: $size
     color: $color
 
-body
+*
     margin: 0
     padding: 0
-    background-color: #eee
 
+div.name
+    height: 10vh
+    float: left
+    background-color: black
+    span
+        +font(Ul,7vh,white)
+        font-weight: lighter
+        background-color: inherit
+header
+    height: 100px
+    height: 7vh
+    position: fixed
+    top: 0
+    background-color: white
+    width: 100%
+    z-index: 2
+    nav
+        float: right
+        margin: 0
+        background-color: white
+        a
+            color: black
+            margin: inherit
+            background-color: inherit
+            button
+                width: 15vw
+                height: 7vh
+                border-width: 0
+                background-color: inherit
+                margin: 0
+                font-family: Ul
+                font-weight: lighter
+                font-size: 3vh
+                &:hover
+                    background-color: #ccc
+        img
+            height: 7vh         
+            background-color: inherit
 #header-image
     background-color: #f8da59
     background-image: url('../images/js.gif')
@@ -18,6 +58,7 @@ body
     background-position: center center
     height: 950px
     height: 100vh
+    z-index: 1
     #credit
         position: absolute
         bottom: 10px
@@ -36,41 +77,9 @@ body
             a
                 display: inline
 
-.name
-    margin-top: 0.6vw
-    float: left
-    font-size: 3vw
-    @media (max-width: 540px)
-        font-size: 20px
-
-    @media (min-resolution: 200dpi) and (max-width: 720px)
-        font-size: 5vw
-
-header
-    position: relative
-    width: 100%
-    background-color: white
-    nav
-        float: right
-        a
-            color: black
-            button
-                background-color: white
-                border-width: 0 1px 0 0
-                border-color: #eee
-                height: 5.5vw
-                +font($fonts,25px,default)
-                font-weight: lighter
-        img
-            height: 5.5vw
-            @media (max-width: 540px)
-                height: 34px
-
-            @media (min-resolution: 200dpi) and (max-width: 720px)
-                height: 8vw
-
 #main-content
+    padding-top: 50px
+    padding-top: 7vh
     height: 2000px
     background-color: green
-    margin-top: 16px
     margin-bottom: 16px
