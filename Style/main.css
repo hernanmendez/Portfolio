@@ -67,15 +67,31 @@ header nav a {
   color: black;
 }
 
-header nav button {
+header nav a button {
   background-color: white;
   border-width: 0 1px 0 0;
   border-color: #eee;
   height: 5.5vw;
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.3vw;
-  font-weight: 500;
+  font-size: 25px;
   color: default;
+  font-weight: lighter;
+}
+
+header nav img {
+  height: 5.5vw;
+}
+
+@media (max-width: 540px) {
+  header nav img {
+    height: 34px;
+  }
+}
+
+@media (min-resolution: 200dpi) and (max-width: 720px) {
+  header nav img {
+    height: 8vw;
+  }
 }
 
 #main-content {

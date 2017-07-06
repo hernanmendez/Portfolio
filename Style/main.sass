@@ -1,8 +1,7 @@
 $fonts: Helvetica, Arial, "Lucida Grande", sans-serif
-=font($family,$size,$color,$weight)
+=font($family,$size,$color)
     font-family: $family
     font-size: $size
-    font-weight: $weight
     color: $color
 
 body
@@ -54,12 +53,20 @@ header
         float: right
         a
             color: black
-        button
-            background-color: white
-            border-width: 0 1px 0 0
-            border-color: #eee
+            button
+                background-color: white
+                border-width: 0 1px 0 0
+                border-color: #eee
+                height: 5.5vw
+                +font($fonts,25px,default)
+                font-weight: lighter
+        img
             height: 5.5vw
-            +font($fonts,1.3vw,default,500)
+            @media (max-width: 540px)
+                height: 34px
+
+            @media (min-resolution: 200dpi) and (max-width: 720px)
+                height: 8vw
 
 #main-content
     height: 2000px
