@@ -36,6 +36,8 @@ body {
 }
 
 .name {
+  margin-top: 0.6vw;
+  float: left;
   font-size: 3vw;
 }
 
@@ -55,6 +57,25 @@ header {
   position: relative;
   width: 100%;
   background-color: white;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  color: black;
+}
+
+header nav button {
+  background-color: white;
+  border-width: 0 1px 0 0;
+  border-color: #eee;
+  height: 5.5vw;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: default;
 }
 
 #main-content {

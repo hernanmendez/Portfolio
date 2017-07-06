@@ -37,6 +37,8 @@ body
                 display: inline
 
 .name
+    margin-top: 0.6vw
+    float: left
     font-size: 3vw
     @media (max-width: 540px)
         font-size: 20px
@@ -48,6 +50,16 @@ header
     position: relative
     width: 100%
     background-color: white
+    nav
+        float: right
+        a
+            color: black
+        button
+            background-color: white
+            border-width: 0 1px 0 0
+            border-color: #eee
+            height: 5.5vw
+            +font($fonts,1.3vw,default,500)
 
 #main-content
     height: 2000px
