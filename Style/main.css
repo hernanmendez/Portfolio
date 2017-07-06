@@ -67,6 +67,7 @@ header nav a {
   color: black;
 }
 
+<<<<<<< HEAD
 header nav button {
   height: 5vw;
   margin-left: 0;
@@ -82,11 +83,30 @@ header nav button {
 
 header nav img {
   height: 5vw;
+=======
+header nav a button {
+  background-color: white;
+  border-width: 0 1px 0 0;
+  border-color: #eee;
+  height: 5.5vw;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 25px;
+  color: default;
+  font-weight: lighter;
+}
+
+header nav img {
+  height: 5.5vw;
+>>>>>>> master
 }
 
 @media (max-width: 540px) {
   header nav img {
+<<<<<<< HEAD
     height: 30px;
+=======
+    height: 34px;
+>>>>>>> master
   }
 }
 
