@@ -1,18 +1,78 @@
-body {
+@font-face {
+  font-family: Ul;
+  src: url(./Comme-ExtraLight.ttf);
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+}
+
+div.name {
+  height: 10vh;
+  float: left;
+  background-color: black;
+}
+
+div.name span {
+  font-family: Ul;
+  font-size: 7vh;
+  color: white;
+  font-weight: lighter;
+  background-color: inherit;
+}
+
+header {
+  height: 100px;
+  height: 7vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+header nav {
+  float: right;
+  margin: 0;
+  background-color: white;
+}
+
+header nav a {
+  color: black;
+  margin: inherit;
+  background-color: inherit;
+}
+
+header nav a button {
+  width: 15vw;
+  height: 7vh;
+  border-width: 0;
+  background-color: inherit;
+  margin: 0;
+  font-family: Ul;
+  font-weight: lighter;
+  font-size: 3vh;
+}
+
+header nav a button:hover {
+  background-color: #ccc;
+}
+
+header nav img {
+  height: 7vh;
+  background-color: inherit;
 }
 
 #header-image {
   background-color: #f8da59;
   background-image: url("../images/js.gif");
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   height: 950px;
   height: 100vh;
+  z-index: 1;
 }
 
 #header-image #credit {
@@ -37,6 +97,8 @@ body {
 }
 
 #main-content {
+  padding-top: 50px;
+  padding-top: 7vh;
   height: 2000px;
   background-color: green;
   margin-bottom: 16px;
