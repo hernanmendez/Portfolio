@@ -36,6 +36,8 @@ body {
 }
 
 .name {
+  margin-top: 0.6vw;
+  float: left;
   font-size: 3vw;
 }
 
@@ -55,6 +57,39 @@ header {
   position: relative;
   width: 100%;
   background-color: white;
+}
+
+header nav {
+  float: right;
+}
+
+header nav button {
+  height: 5vw;
+  margin-left: 0;
+  padding: 10px;
+  border-width: 0 1px 0 0;
+  border-color: #eee;
+  background-color: white;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: default;
+}
+
+header nav img {
+  height: 5vw;
+}
+
+@media (max-width: 540px) {
+  header nav img {
+    height: 30px;
+  }
+}
+
+@media (min-resolution: 200dpi) and (max-width: 720px) {
+  header nav img {
+    height: 8vw;
+  }
 }
 
 #main-content {
