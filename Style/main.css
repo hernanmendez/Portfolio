@@ -153,6 +153,7 @@ img.max-width {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), white), url("../images/back.png");
   background-repeat: repeat-y;
   background-size: contain;
+  background-attachment: fixed;
 }
 
 #About-Me .text-right {
