@@ -151,3 +151,12 @@ img.max-width {
   padding-top: 7vh;
   padding-bottom: 7vh;
 }
+
+#Projects {
+  padding-top: 6vh;
+  padding-bottom: 7vh;
+  font-family: Ul;
+  background-color: #9b59b6;
+  color: white;
+  font-weight: bolder;
+}
