@@ -85,8 +85,15 @@ header nav img:active {
 }
 
 .mobileNav a {
+  height: 70px;
+  font-size: 4px;
+  text-align: center;
+  height: 5vh;
+  font-family: Ul;
+  font-size: 3vh;
+  color: #444;
+  font-weight: lighter;
   border-radius: 0;
-  color: black;
   display: block;
   width: 100%;
 }
@@ -113,7 +120,7 @@ header nav img:active {
 
 #header-image #credit {
   position: absolute;
-  bottom: -5px;
+  bottom: 5px;
   right: 5px;
   background-color: #f8da59;
   border-radius: 32px;
