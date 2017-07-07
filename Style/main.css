@@ -113,9 +113,8 @@ header nav img:active {
 
 #header-image #credit {
   position: absolute;
-  bottom: 5px;
+  bottom: -5px;
   right: 5px;
-  color: #29293f;
   background-color: #f8da59;
   border-radius: 32px;
   padding: 4px;
@@ -123,13 +122,7 @@ header nav img:active {
 }
 
 #header-image #credit a {
-  display: none;
-  text-decoration: none;
   color: #29293f;
-}
-
-#header-image #credit:hover a {
-  display: inline;
 }
 
 #header-image #stopGif {
@@ -157,6 +150,9 @@ img.max-width {
 #About-Me {
   padding-top: 7vh;
   padding-bottom: 7vh;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), white), url("../images/back.png");
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 #Projects {
