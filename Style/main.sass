@@ -47,6 +47,29 @@ header
         img
             height: 7vh         
             background-color: inherit
+            &:hover
+                background-color: #ccc
+            &:active
+                background-color: #aaa
+
+.mobileNav
+    position: fixed
+    top: 7vh
+    width: 100%
+    margin: 0
+    padding: 0
+    background-color: #eee
+    a
+        border-radius: 0
+        color: black
+        display: block
+        width: 100%
+        &:hover
+            background-color: #ccc
+        &:active
+            background-color: #aaa
+    
+
 #header-image
     background-color: #f8da59
     background-image: url('../images/js.gif')

@@ -62,6 +62,38 @@ header nav img {
   background-color: inherit;
 }
 
+header nav img:hover {
+  background-color: #ccc;
+}
+
+header nav img:active {
+  background-color: #aaa;
+}
+
+.mobileNav {
+  position: fixed;
+  top: 7vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.mobileNav a {
+  border-radius: 0;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.mobileNav a:hover {
+  background-color: #ccc;
+}
+
+.mobileNav a:active {
+  background-color: #aaa;
+}
+
 #header-image {
   background-color: #f8da59;
   background-image: url("../images/js.gif");
