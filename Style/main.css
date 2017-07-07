@@ -101,7 +101,7 @@ header nav img:active {
 
 #header-image {
   background-color: #f8da59;
-  background-image: url("../images/js.gif");
+  background-image: url("../images/stop.gif");
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
   background-size: cover;
@@ -109,6 +109,10 @@ header nav img:active {
   height: 950px;
   height: 100vh;
   z-index: 1;
+}
+
+#header-image:hover {
+  background-image: url(../images/js.gif);
 }
 
 #header-image #credit {
