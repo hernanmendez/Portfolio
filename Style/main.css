@@ -57,6 +57,10 @@ header nav a button:hover {
   background-color: #ccc;
 }
 
+header nav a button:active {
+  background-color: #aaa;
+}
+
 header nav img {
   height: 7vh;
   background-color: inherit;
