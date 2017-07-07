@@ -35,13 +35,11 @@ header {
 header nav {
   float: right;
   margin: 0;
-  background-color: white;
 }
 
 header nav a {
   color: black;
   margin: inherit;
-  background-color: inherit;
 }
 
 header nav a button {
@@ -98,9 +96,7 @@ header nav img {
 }
 
 #main-content {
-  padding-top: 50px;
-  padding-top: 7vh;
   height: 2000px;
-  background-color: green;
+  background-color: white;
   margin-bottom: 16px;
 }
