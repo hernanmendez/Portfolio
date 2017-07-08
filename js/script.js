@@ -54,5 +54,4 @@ $($containerProjectXS.children()).each(function(){
 $containerProjectXS.css('height', topsXS)
 }
 resize()
-
 $(window).resize(resize)

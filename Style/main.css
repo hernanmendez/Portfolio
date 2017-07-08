@@ -19,7 +19,6 @@ div.name span {
   font-size: 7vh;
   color: white;
   font-weight: lighter;
-  background-color: inherit;
 }
 
 header {
@@ -39,7 +38,6 @@ header nav {
 
 header nav a {
   color: black;
-  margin: inherit;
 }
 
 header nav a button {
@@ -81,7 +79,6 @@ header nav a button:active {
   font-weight: lighter;
   border-radius: 0;
   display: block;
-  width: 100%;
 }
 
 .mobileNav a:hover {
@@ -161,29 +158,22 @@ header.mini img:active {
   z-index: 1;
 }
 
-#header-image #credit {
+#header-image button, #header-image a {
   position: absolute;
   bottom: 5px;
-  right: 5px;
   background-color: #f8da59;
+  color: #29293f;
   border-radius: 32px;
   padding: 4px;
   border: 3px solid #29293f;
 }
 
-#header-image #credit a {
-  color: #29293f;
+#header-image #credit {
+  right: 5px;
 }
 
 #header-image #stopGif {
-  position: absolute;
-  bottom: 5px;
   left: 5px;
-  color: #29293f;
-  background-color: #f8da59;
-  border-radius: 32px;
-  padding: 4px;
-  border: 3px solid #29293f;
 }
 
 .black-bg {
@@ -226,52 +216,49 @@ img.max-width-res {
 #Projects {
   padding-top: 6vh;
   padding-bottom: 7vh;
-  font-family: Ul;
   background-color: #bdc3c7;
-  color: white;
   font-weight: bolder;
   text-align: center;
+  font-family: Ul;
+  font-size: default;
+  color: white;
 }
 
-#Projects div.container.hidden-xs.hidden-sm {
+#Projects div.container {
   position: relative;
+}
+
+#Projects div.container div {
+  color: #444;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #ddd;
+  border: 1px solid #bdc3c7;
+}
+
+#Projects div.container div img {
+  display: block;
+}
+
+#Projects div.container div:hover img {
+  box-shadow: 0 0 6px #3498db;
 }
 
 #Projects div.container.hidden-xs.hidden-sm div {
-  color: #444;
-  position: absolute;
   width: 33.33333%;
-  background-color: #ddd;
-  box-sizing: border-box;
-  border: 10px solid #bdc3c7;
+  border-width: 10px;
   padding: 2%;
 }
 
-#Projects div.container.hidden-xs.hidden-md {
-  position: relative;
-}
-
 #Projects div.container.hidden-xs.hidden-md div {
-  color: #444;
-  position: absolute;
   width: 50%;
-  background-color: #ddd;
-  box-sizing: border-box;
-  border: 7px solid #bdc3c7;
+  border-width: 7px;
   padding: 4%;
 }
 
-#Projects div.container.hidden-sm.hidden-md {
-  position: relative;
-}
-
 #Projects div.container.hidden-sm.hidden-md div {
-  color: #444;
-  position: absolute;
   width: 100%;
-  background-color: #ddd;
-  box-sizing: border-box;
-  border: 10px solid #bdc3c7;
+  border-width: 10px;
   border-left-width: 6vw;
   border-right-width: 6vw;
   border-top-width: 3vh;

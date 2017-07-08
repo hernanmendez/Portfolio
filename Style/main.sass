@@ -11,6 +11,12 @@
     margin: 0
     padding: 0
 
+=hover()
+    &:hover
+        background-color: #ccc
+    &:active
+        background-color: #aaa
+
 div.name
     height: 10vh
     float: left
@@ -18,7 +24,6 @@ div.name
     span
         +font(Ul,7vh,white)
         font-weight: lighter
-        background-color: inherit
     
 header
     height: 100px
@@ -33,7 +38,6 @@ header
         margin: 0
         a
             color: black
-            margin: inherit
             button
                 width: 15vw
                 height: 7vh
@@ -43,10 +47,7 @@ header
                 font-family: Ul
                 font-weight: lighter
                 font-size: 3vh
-                &:hover
-                    background-color: #ccc
-                &:active
-                    background-color: #aaa
+                +hover()
 
 
 .mobileNav
@@ -65,17 +66,14 @@ header
         font-weight: lighter
         border-radius: 0
         display: block
-        width: 100%
-        &:hover
-            background-color: #ccc
-        &:active
-            background-color: #aaa
+        +hover()
     @media (orientation: landscape)
         top: 11vh
         font-size: 6vh
         a
             height: 10vh
             font-size: 6vh
+
 header.mini
     height: 100px
     height: 6vh
@@ -95,10 +93,7 @@ header.mini
         float: right
         height: 6vh         
         background-color: inherit
-        &:hover
-            background-color: #ccc
-        &:active
-            background-color: #aaa
+        +hover()
     @media (orientation: landscape)
         height: 11.5vh
         img
@@ -117,25 +112,18 @@ header.mini
     height: 950px
     height: 100vh
     z-index: 1
-    #credit
+    button,a
         position: absolute
         bottom: 5px
-        right: 5px
         background-color: #f8da59
-        border-radius: 32px
-        padding: 4px
-        border: 3px solid #29293f
-        a
-            color: #29293f
-    #stopGif
-        position: absolute
-        bottom: 5px
-        left: 5px
         color: #29293f
-        background-color: #f8da59
         border-radius: 32px
         padding: 4px
         border: 3px solid #29293f
+    #credit
+        right: 5px
+    #stopGif
+        left: 5px
 
 .black-bg
     background-color: #333
@@ -165,40 +153,38 @@ img.max-width-res
 #Projects
     padding-top: 6vh
     padding-bottom: 7vh 
-    font-family: Ul
     background-color: #bdc3c7
-    color: white
     font-weight: bolder
     text-align: center
-    div.container.hidden-xs.hidden-sm
+    +font(Ul,default,white)
+    div.container
         position: relative
-        div 
+        div
             color: #444
             position: absolute
-            width: 100/3 *1%
-            background-color: #ddd
             box-sizing: border-box
-            border: 10px solid #bdc3c7
+            background-color: #ddd
+            border: 1px solid #bdc3c7
+            img
+                display: block
+            &:hover
+                img
+                    box-shadow: 0 0 6px #3498db
+
+    div.container.hidden-xs.hidden-sm
+        div 
+            width: 100/3 *1%
+            border-width: 10px
             padding: 2%
     div.container.hidden-xs.hidden-md
-        position: relative
         div 
-            color: #444
-            position: absolute
             width: 50%
-            background-color: #ddd
-            box-sizing: border-box
-            border: 7px solid #bdc3c7
+            border-width: 7px
             padding: 4%
     div.container.hidden-sm.hidden-md
-        position: relative
         div 
-            color: #444
-            position: absolute
             width: 100%
-            background-color: #ddd
-            box-sizing: border-box
-            border: 10px solid #bdc3c7
+            border-width: 10px
             border-left-width: 6vw
             border-right-width: 6vw
             border-top-width: 3vh
