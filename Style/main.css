@@ -61,22 +61,9 @@ header nav a button:active {
   background-color: #aaa;
 }
 
-header nav img {
-  height: 7vh;
-  background-color: inherit;
-}
-
-header nav img:hover {
-  background-color: #ccc;
-}
-
-header nav img:active {
-  background-color: #aaa;
-}
-
 .mobileNav {
   position: fixed;
-  top: 7vh;
+  top: 6vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -86,7 +73,7 @@ header nav img:active {
 
 .mobileNav a {
   height: 70px;
-  font-size: 4px;
+  font-size: 40px;
   text-align: center;
   height: 5vh;
   font-family: Ul;
@@ -104,6 +91,62 @@ header nav img:active {
 
 .mobileNav a:active {
   background-color: #aaa;
+}
+
+@media (orientation: landscape) {
+  .mobileNav {
+    top: 14vh;
+    font-size: 6vh;
+  }
+  .mobileNav a {
+    height: 10vh;
+    font-size: 6vh;
+  }
+}
+
+header.mini {
+  height: 100px;
+  height: 6vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+}
+
+header.mini div {
+  background-color: black;
+  font-size: 5vh;
+  color: white;
+  float: left;
+  font-family: Ul;
+}
+
+header.mini img {
+  float: right;
+  height: 6vh;
+  background-color: inherit;
+}
+
+header.mini img:hover {
+  background-color: #ccc;
+}
+
+header.mini img:active {
+  background-color: #aaa;
+}
+
+@media (orientation: landscape) {
+  header.mini {
+    height: 14vh;
+  }
+  header.mini img {
+    height: 14vh;
+  }
+  header.mini div {
+    height: 20vh;
+    font-size: 13vh;
+  }
 }
 
 #header-image {
@@ -157,14 +200,14 @@ img.max-width {
 #About-Me {
   padding-top: 7vh;
   padding-bottom: 7vh;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), white), url("../images/back.png");
-  background-repeat: repeat-y;
-  background-size: contain;
-  background-attachment: fixed;
 }
 
 #About-Me .text-right {
   text-align: right;
+}
+
+#About-Me .text-center {
+  text-align: center;
 }
 
 #Projects {

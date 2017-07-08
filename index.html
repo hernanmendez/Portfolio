@@ -9,15 +9,20 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid visible-md visible-lg">
         <div class="name"><span>Hernan</span></div>
         <nav>
-            <a href="#skills" class='hidden-xs hidden-sm'><button>My Skills</button></a>
-            <a href="#About-Me" class='hidden-xs hidden-sm'><button>About Me</button></a>
-            <a href="#Projects" class='hidden-xs hidden-sm'><button>Projects</button></a>
-            <img src="./images/bars.svg" alt="bars"  class='hidden-md hidden-lg'>
+            <a href="#skills" ><button>My Skills</button></a>
+            <a href="#About-Me" ><button>About Me</button></a>
+            <a href="#Projects" ><button>Projects</button></a>
         </nav>
     </header>
+    <header class="container-fluid visible-sm visible-xs mini">
+        <div><span>Hernan</span></div>
+        <img src="./images/bars.svg" alt="bars"  class='hidden-md hidden-lg'>
+    </header>
+
+
     <div class="mobileNav hidden-md hidden-lg">
             <br />
             <a href="#skills" type=button>My Skills</a>
@@ -57,23 +62,24 @@
             </div>
         </div>
         <div class='container-fluid' id='About-Me'>
-            <div class="col-xs-10 col-xs-offset-2 col-sm-9 col-sm-offset-3 col-md-offset-3 col-md-9">
-                <h1 class="text-right">About Me</h1>
-                <p class="text-right">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <h1 class="text-center">About Me</h1>
+                <p class="text-center">
                     I Would say I'm an Ambivert, I have no problems meeting new people and talkin with them, but I also like
                     having my own space, I'm passionate about coding, of course, and I'm self-taught 
                 </p>
                 <br/>
-                <p class="text-right">
+                <p class="text-center">
                     My Hobbies are mainly on the scientific side of things, I like everything from Quantum Mechanics to Biology
                     and I'm interested on the future and I would like to be a part of the group that helps building it, and I think
                     that's why I like coding so much
                 </p>
                 <br/>
-                <p class="text-right">
+                <p class="text-center">
                     And finally I would say that what takes me out of bed everyday is that, the idea that I'm helping to create a 
                     better future not just for me, but for everybody around me too
                 </p>
+            </div>
             </div>
         </div>
         <div id="Projects">
