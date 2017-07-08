@@ -233,11 +233,11 @@ img.max-width-res {
   text-align: center;
 }
 
-#Projects div.container {
+#Projects div.container.hidden-xs.hidden-sm {
   position: relative;
 }
 
-#Projects div.container div {
+#Projects div.container.hidden-xs.hidden-sm div {
   color: #444;
   position: absolute;
   width: 33.33333%;
@@ -245,4 +245,32 @@ img.max-width-res {
   box-sizing: border-box;
   border: 5px solid #bdc3c7;
   padding: 2%;
+}
+
+#Projects div.container.hidden-xs.hidden-md {
+  position: relative;
+}
+
+#Projects div.container.hidden-xs.hidden-md div {
+  color: #444;
+  position: absolute;
+  width: 50%;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border: 10px solid #bdc3c7;
+  padding: 4%;
+}
+
+#Projects div.container.hidden-sm.hidden-md {
+  position: relative;
+}
+
+#Projects div.container.hidden-sm.hidden-md div {
+  color: #444;
+  position: absolute;
+  width: 100%;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border: 20px solid #bdc3c7;
+  padding: 6%;
 }

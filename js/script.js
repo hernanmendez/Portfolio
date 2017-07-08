@@ -14,31 +14,45 @@ $('#stopGif').click(function(){
     check = !check
 });
 
-var $containerProject = $('#Projects .container')
-var colWidth = parseInt($containerProject.css('width'),10)/3
+var $containerProjectMD = $('#Projects .container.hidden-xs.hidden-sm')
+var $containerProjectSM = $('#Projects .container.hidden-xs.hidden-md')
+var $containerProjectXS = $('#Projects .container.hidden-sm.hidden-md')
+function resize(){
+var colWidthMD = parseInt($containerProjectMD.css('width'),10)/3
+var colWidthSM = parseInt($containerProjectSM.css('width'),10)/2
 
-var tops = [0,0,0]
-$($containerProject.children()).each(function(index){
+var topsMD = [0,0,0]
+$($containerProjectMD.children()).each(function(index){
     index %= 3
-    $(this).css('left', colWidth*index)
-        .css('top',tops[index])
+    $(this).css('left', colWidthMD*index)
+        .css('top',topsMD[index])
 
-    tops[index] += parseInt($(this).css('height'),10) + 10
+    topsMD[index] += parseInt($(this).css('height'),10) + 10
 })
 
-$containerProject.css('height', Math.max(...tops))
+$containerProjectMD.css('height', Math.max(...topsMD))
 
-$(window).resize(function(){
-    colWidth = parseInt($containerProject.css('width'),10)/3
-    
-        var top = [0,0,0]
-        $($containerProject.children()).each(function(index){
-            index %= 3
-            $(this).css('left', colWidth*index)
-                .css('top',top[index])
+var topsSM = [0,0]
+$($containerProjectSM.children()).each(function(index){
+    index %= 2
+    $(this).css('left', colWidthSM*index)
+        .css('top',topsSM[index])
 
-            top[index] += parseInt($(this).css('height'),10)
-        })
-    $containerProject.css('height', Math.max(...top))
-    
+    topsSM[index] += parseInt($(this).css('height'),10) + 10
 })
+
+$containerProjectSM.css('height', Math.max(...topsSM))
+
+var topsXS = 0
+$($containerProjectXS.children()).each(function(){
+    $(this).css('left', 0)
+        .css('top',topsXS)
+
+    topsXS += parseInt($(this).css('height'),10) + 10
+})
+
+$containerProjectXS.css('height', topsXS)
+}
+resize()
+
+$(window).resize(resize)
