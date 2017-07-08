@@ -63,10 +63,9 @@ header nav a button:active {
 
 .mobileNav {
   position: fixed;
+  top: 100px;
   top: 6vh;
   width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #eee;
   z-index: 2;
 }
@@ -232,4 +231,18 @@ img.max-width-res {
   color: white;
   font-weight: bolder;
   text-align: center;
+}
+
+#Projects div.container {
+  position: relative;
+}
+
+#Projects div.container div {
+  color: #444;
+  position: absolute;
+  width: 33.33333%;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border: 5px solid #bdc3c7;
+  padding: 2%;
 }
