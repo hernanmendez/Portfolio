@@ -274,3 +274,12 @@ img.max-width-res {
   border: 4px solid #bdc3c7;
   padding: 6%;
 }
+
+@media (orientation: landscape) {
+  #Projects div.container.hidden-sm.hidden-md div {
+    border-left-width: 10vw;
+    border-right-width: 10vw;
+    border-top-width: 7vh;
+    border-bottom-width: 7vh;
+  }
+}
