@@ -95,7 +95,7 @@ header nav a button:active {
 
 @media (orientation: landscape) {
   .mobileNav {
-    top: 14vh;
+    top: 11vh;
     font-size: 6vh;
   }
   .mobileNav a {
@@ -139,13 +139,13 @@ header.mini img:active {
 
 @media (orientation: landscape) {
   header.mini {
-    height: 11vh;
+    height: 11.5vh;
   }
   header.mini img {
-    height: 11vh;
+    height: 11.5vh;
   }
   header.mini div {
-    height: 14vh;
+    height: 13vh;
     font-size: 10vh;
   }
 }
