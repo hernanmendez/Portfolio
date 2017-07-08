@@ -115,6 +115,7 @@ header.mini {
 }
 
 header.mini div {
+  height: 8vh;
   background-color: black;
   font-size: 5vh;
   color: white;
@@ -138,14 +139,14 @@ header.mini img:active {
 
 @media (orientation: landscape) {
   header.mini {
-    height: 14vh;
+    height: 11vh;
   }
   header.mini img {
-    height: 14vh;
+    height: 11vh;
   }
   header.mini div {
-    height: 20vh;
-    font-size: 13vh;
+    height: 14vh;
+    font-size: 10vh;
   }
 }
 
