@@ -52,32 +52,7 @@ header
                 font-size: 3vh
                 +hover()
 
-
-.mobileNav.hidden-sm
-    position: fixed
-    top: 100px
-    top: 6vh
-    width: 100%
-    background-color: #eee
-    z-index: 2
-    a
-        height: 70px
-        font-size: 40px
-        text-align: center
-        height: 5vh
-        +font(Ul,3vh,#444)
-        font-weight: lighter
-        border-radius: 0
-        display: block
-        +hover()
-    @media (orientation: landscape)
-        top: 11vh
-        font-size: 6vh
-        a
-            height: 10vh
-            font-size: 6vh
-
-header.visible-xs
+header
     height: 100px
     height: 6vh
     position: fixed
@@ -97,6 +72,8 @@ header.visible-xs
         height: 6vh         
         background-color: inherit
         +hover()
+        
+header.visible-xs
     @media (orientation: landscape)
         height: 11.5vh
         img
@@ -105,28 +82,7 @@ header.visible-xs
             height: 13vh
             font-size: 10vh
 
-header.visible-sm
-    height: 100px
-    height: 6vh
-    position: fixed
-    top: 0
-    background-color: white
-    width: 100%
-    z-index: 3
-    div
-        height: 8vh
-        background-color: black
-        font-size: 5vh
-        color: white
-        float: left
-        font-family: Ul
-    img
-        float: right
-        height: 6vh         
-        background-color: inherit
-        +hover()
-
-.mobileNav.hidden-xs
+.mobileNav
     position: fixed
     top: 100px
     top: 6vh
@@ -143,6 +99,14 @@ header.visible-sm
         border-radius: 0
         display: block
         +hover()
+        
+.mobileNav.hidden-sm
+    @media (orientation: landscape)
+        top: 11vh
+        font-size: 6vh
+        a
+            height: 10vh
+            font-size: 6vh
 
 #header-image
     background-color: #f8da59

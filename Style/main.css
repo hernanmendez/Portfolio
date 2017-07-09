@@ -63,48 +63,7 @@ header nav a button:active {
   background-color: #aaa;
 }
 
-.mobileNav.hidden-sm {
-  position: fixed;
-  top: 100px;
-  top: 6vh;
-  width: 100%;
-  background-color: #eee;
-  z-index: 2;
-}
-
-.mobileNav.hidden-sm a {
-  height: 70px;
-  font-size: 40px;
-  text-align: center;
-  height: 5vh;
-  font-family: Ul;
-  font-size: 3vh;
-  color: #444;
-  font-weight: lighter;
-  border-radius: 0;
-  display: block;
-}
-
-.mobileNav.hidden-sm a:hover {
-  background-color: #ccc;
-}
-
-.mobileNav.hidden-sm a:active {
-  background-color: #aaa;
-}
-
-@media (orientation: landscape) {
-  .mobileNav.hidden-sm {
-    top: 11vh;
-    font-size: 6vh;
-  }
-  .mobileNav.hidden-sm a {
-    height: 10vh;
-    font-size: 6vh;
-  }
-}
-
-header.visible-xs {
+header {
   height: 100px;
   height: 6vh;
   position: fixed;
@@ -114,7 +73,7 @@ header.visible-xs {
   z-index: 3;
 }
 
-header.visible-xs div {
+header div {
   height: 8vh;
   background-color: black;
   font-size: 5vh;
@@ -123,17 +82,17 @@ header.visible-xs div {
   font-family: Ul;
 }
 
-header.visible-xs img {
+header img {
   float: right;
   height: 6vh;
   background-color: inherit;
 }
 
-header.visible-xs img:hover {
+header img:hover {
   background-color: #ccc;
 }
 
-header.visible-xs img:active {
+header img:active {
   background-color: #aaa;
 }
 
@@ -150,40 +109,7 @@ header.visible-xs img:active {
   }
 }
 
-header.visible-sm {
-  height: 100px;
-  height: 6vh;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  width: 100%;
-  z-index: 3;
-}
-
-header.visible-sm div {
-  height: 8vh;
-  background-color: black;
-  font-size: 5vh;
-  color: white;
-  float: left;
-  font-family: Ul;
-}
-
-header.visible-sm img {
-  float: right;
-  height: 6vh;
-  background-color: inherit;
-}
-
-header.visible-sm img:hover {
-  background-color: #ccc;
-}
-
-header.visible-sm img:active {
-  background-color: #aaa;
-}
-
-.mobileNav.hidden-xs {
+.mobileNav {
   position: fixed;
   top: 100px;
   top: 6vh;
@@ -192,7 +118,7 @@ header.visible-sm img:active {
   z-index: 2;
 }
 
-.mobileNav.hidden-xs a {
+.mobileNav a {
   height: 70px;
   font-size: 40px;
   text-align: center;
@@ -205,12 +131,23 @@ header.visible-sm img:active {
   display: block;
 }
 
-.mobileNav.hidden-xs a:hover {
+.mobileNav a:hover {
   background-color: #ccc;
 }
 
-.mobileNav.hidden-xs a:active {
+.mobileNav a:active {
   background-color: #aaa;
+}
+
+@media (orientation: landscape) {
+  .mobileNav.hidden-sm {
+    top: 11vh;
+    font-size: 6vh;
+  }
+  .mobileNav.hidden-sm a {
+    height: 10vh;
+    font-size: 6vh;
+  }
 }
 
 #header-image {
