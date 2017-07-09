@@ -1,8 +1,11 @@
-var $mobileNav = $('.mobileNav');
-$mobileNav.hide(0);
+$('.mobileNav').hide(0);
 
-$('header img').click(function(){
-    $mobileNav.slideToggle();
+
+$('#xs-img').click(function(){
+    $('.mobileNav.hidden-sm').slideToggle();
+});
+$('#sm-img').click(function(){
+    $('.mobileNav.hidden-xs').slideToggle();
 });
 
 var check = true;
@@ -16,7 +19,6 @@ $('#stopGif').click(function(){
 
 var $containerProjectMD = $('#Projects .container.hidden-xs.hidden-sm')
 var $containerProjectSM = $('#Projects .container.hidden-xs.hidden-md')
-var $containerProjectXS = $('#Projects .container.hidden-sm.hidden-md')
 function resize(){
 var colWidthMD = parseInt($containerProjectMD.css('width'))/3
 var colWidthSM = parseInt($containerProjectSM.css('width'))/2
@@ -30,8 +32,6 @@ $($containerProjectMD.children()).each(function(index){
     topsMD[index] += parseInt($(this).css('height')) + 10
 })
 
-$containerProjectMD.css('height', Math.max(...topsMD))
-
 var topsSM = [0,0]
 $($containerProjectSM.children()).each(function(index){
     index %= 2
@@ -40,18 +40,6 @@ $($containerProjectSM.children()).each(function(index){
 
     topsSM[index] += parseInt($(this).css('height')) + 10
 })
-
-$containerProjectSM.css('height', Math.max(...topsSM))
-
-var topsXS = 0
-$($containerProjectXS.children()).each(function(){
-    $(this).css('left', 0)
-        .css('top',topsXS)
-    
-    topsXS += parseInt($(this).css('height')) + 10
-})
-
-$containerProjectXS.css('height', topsXS)
 }
-resize()
-$(window).resize(resize)
+window.onload = resize;
+$(window).resize(resize);

@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #bdc3c7;
+}
+
 div.name {
   height: 10vh;
   float: left;
@@ -59,7 +63,7 @@ header nav a button:active {
   background-color: #aaa;
 }
 
-.mobileNav {
+.mobileNav.hidden-sm {
   position: fixed;
   top: 100px;
   top: 6vh;
@@ -68,7 +72,7 @@ header nav a button:active {
   z-index: 2;
 }
 
-.mobileNav a {
+.mobileNav.hidden-sm a {
   height: 70px;
   font-size: 40px;
   text-align: center;
@@ -81,26 +85,26 @@ header nav a button:active {
   display: block;
 }
 
-.mobileNav a:hover {
+.mobileNav.hidden-sm a:hover {
   background-color: #ccc;
 }
 
-.mobileNav a:active {
+.mobileNav.hidden-sm a:active {
   background-color: #aaa;
 }
 
 @media (orientation: landscape) {
-  .mobileNav {
+  .mobileNav.hidden-sm {
     top: 11vh;
     font-size: 6vh;
   }
-  .mobileNav a {
+  .mobileNav.hidden-sm a {
     height: 10vh;
     font-size: 6vh;
   }
 }
 
-header.mini {
+header.visible-xs {
   height: 100px;
   height: 6vh;
   position: fixed;
@@ -110,7 +114,7 @@ header.mini {
   z-index: 3;
 }
 
-header.mini div {
+header.visible-xs div {
   height: 8vh;
   background-color: black;
   font-size: 5vh;
@@ -119,31 +123,94 @@ header.mini div {
   font-family: Ul;
 }
 
-header.mini img {
+header.visible-xs img {
   float: right;
   height: 6vh;
   background-color: inherit;
 }
 
-header.mini img:hover {
+header.visible-xs img:hover {
   background-color: #ccc;
 }
 
-header.mini img:active {
+header.visible-xs img:active {
   background-color: #aaa;
 }
 
 @media (orientation: landscape) {
-  header.mini {
+  header.visible-xs {
     height: 11.5vh;
   }
-  header.mini img {
+  header.visible-xs img {
     height: 11.5vh;
   }
-  header.mini div {
+  header.visible-xs div {
     height: 13vh;
     font-size: 10vh;
   }
+}
+
+header.visible-sm {
+  height: 100px;
+  height: 6vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+}
+
+header.visible-sm div {
+  height: 8vh;
+  background-color: black;
+  font-size: 5vh;
+  color: white;
+  float: left;
+  font-family: Ul;
+}
+
+header.visible-sm img {
+  float: right;
+  height: 6vh;
+  background-color: inherit;
+}
+
+header.visible-sm img:hover {
+  background-color: #ccc;
+}
+
+header.visible-sm img:active {
+  background-color: #aaa;
+}
+
+.mobileNav.hidden-xs {
+  position: fixed;
+  top: 100px;
+  top: 6vh;
+  width: 100%;
+  background-color: #eee;
+  z-index: 2;
+}
+
+.mobileNav.hidden-xs a {
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+  height: 5vh;
+  font-family: Ul;
+  font-size: 3vh;
+  color: #444;
+  font-weight: lighter;
+  border-radius: 0;
+  display: block;
+}
+
+.mobileNav.hidden-xs a:hover {
+  background-color: #ccc;
+}
+
+.mobileNav.hidden-xs a:active {
+  background-color: #aaa;
 }
 
 #header-image {
@@ -203,6 +270,7 @@ img.max-width-res {
 #About-Me {
   padding-top: 7vh;
   padding-bottom: 7vh;
+  background-color: white;
 }
 
 #About-Me .text-right {
@@ -216,7 +284,6 @@ img.max-width-res {
 #Projects {
   padding-top: 6vh;
   padding-bottom: 7vh;
-  background-color: #bdc3c7;
   font-weight: bolder;
   text-align: center;
   font-family: Ul;
@@ -249,30 +316,25 @@ img.max-width-res {
 #Projects div.container.hidden-xs.hidden-sm div {
   width: 33.33333%;
   border-width: 10px;
-  padding: 2%;
+  padding: 20px;
 }
 
 #Projects div.container.hidden-xs.hidden-md div {
   width: 50%;
   border-width: 7px;
-  padding: 4%;
+  padding: 20px;
+}
+
+#Projects div.container.hidden-sm.hidden-md {
+  position: static;
 }
 
 #Projects div.container.hidden-sm.hidden-md div {
+  position: static;
   width: 100%;
-  border-width: 10px;
-  border-left-width: 6vw;
-  border-right-width: 6vw;
-  border-top-width: 3vh;
-  border-bottom-width: 3vh;
-  padding: 6%;
-}
-
-@media (orientation: landscape) {
-  #Projects div.container.hidden-sm.hidden-md div {
-    border-left-width: 10vw;
-    border-right-width: 10vw;
-    border-top-width: 6vh;
-    border-bottom-width: 6vh;
-  }
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20px;
 }

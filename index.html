@@ -17,18 +17,28 @@
             <a href="#Projects" ><button>Projects</button></a>
         </nav>
     </header>
-    <header class="container-fluid visible-sm visible-xs mini">
+    <header class="container-fluid visible-xs">
         <div><span>Hernan</span></div>
-        <img src="./images/bars.svg" alt="bars"  class='hidden-md hidden-lg'>
+        <img src="./images/bars.svg" alt="bars" id='xs-img'>
+    </header>
+    <header class="container-fluid visible-sm">
+        <div><span>Hernan</span></div>
+        <img src="./images/bars.svg" alt="bars" id='sm-img'>
     </header>
 
-
-    <div class="mobileNav hidden-md hidden-lg">
+    <div class="mobileNav hidden-sm">
             <br />
             <a href="#skills" type=button>My Skills</a>
             <a href="#About-Me" type=button>About Me</a>
             <a href="#Projects" type=button>Projects</a>
     </div>
+    <div class="mobileNav hidden-xs">
+            <br />
+            <a href="#skills" type=button>My Skills</a>
+            <a href="#About-Me" type=button>About Me</a>
+            <a href="#Projects" type=button>Projects</a>
+    </div>
+
     <div id='header-image'>
          <a href='https://www.codejobs.biz/public/images/blog/original/4e195de8b66c994.gif' type="button" id="credit">Gif</a>
          <button id='stopGif'>Stop/Play Gif</button>
@@ -139,9 +149,6 @@
                 </div>
             </div>
         </div>
-    <footer class="container-fluid">
-        <p style='color:aliceblue'>Hernan J. Mendez</p>
-    </footer>
 
     <script src="./js/script.js"></script>
 </body>
