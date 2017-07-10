@@ -20,10 +20,9 @@ $('#stopGif').click(function(){
 var $containerProjectMD = $('#Projects div.container.hidden-xs.hidden-sm')
 var $containerProjectSM = $('#Projects div.container.hidden-xs.hidden-md')
 function resize(){
-
 var topsMD = [0,0,0]
-$($containerProjectMD.children()).each(function(index){
-    index %= 3
+$($containerProjectMD.children()).each(function(){
+    var index = topsMD.indexOf(Math.min(...topsMD))
     $(this).css('left', 100/3 *index + '%')
         .css('top',topsMD[index])
         
@@ -31,8 +30,8 @@ $($containerProjectMD.children()).each(function(index){
 })
 
 var topsSM = [0,0]
-$($containerProjectSM.children()).each(function(index){
-    index %= 2
+$($containerProjectSM.children()).each(function(){
+    var index = topsSM.indexOf(Math.min(...topsSM))
     $(this).css('left', 50*index  + '%')
         .css('top',topsSM[index])
 
