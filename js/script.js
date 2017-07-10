@@ -27,7 +27,7 @@ $($containerProjectMD.children()).each(function(index){
     $(this).css('left', 100/3 *index + '%')
         .css('top',topsMD[index])
         
-    topsMD[index] += parseInt($(this).css('height')) + 10
+    topsMD[index] += parseInt($(this).css('height'))
 })
 
 var topsSM = [0,0]
@@ -36,7 +36,7 @@ $($containerProjectSM.children()).each(function(index){
     $(this).css('left', 50*index  + '%')
         .css('top',topsSM[index])
 
-    topsSM[index] += parseInt($(this).css('height')) + 10
+    topsSM[index] += parseInt($(this).css('height'))
 })
 }
 window.onload = resize;

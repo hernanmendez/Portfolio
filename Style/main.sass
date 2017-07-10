@@ -2,6 +2,8 @@
     font-family: Ul
     src: url(./Comme-ExtraLight.ttf)
 
+$fonts: "Helvetica Neue",Helvetica,Arial,sans-serif
+
 =font($family,$size,$color)
     font-family: $family
     font-size: $size
@@ -63,10 +65,8 @@ header
     div
         height: 8vh
         background-color: black
-        font-size: 5vh
-        color: white
         float: left
-        font-family: Ul
+        +font(Ul,5vh,white)
     img
         float: right
         height: 6vh         
@@ -91,9 +91,9 @@ header.visible-xs
     z-index: 2
     a
         height: 70px
-        font-size: 40px
         text-align: center
         height: 5vh
+        font-size: 40px
         +font(Ul,3vh,#444)
         font-weight: lighter
         border-radius: 0
@@ -118,6 +118,7 @@ header.visible-xs
     height: 950px
     height: 100vh
     z-index: 1
+    font-family: $fonts
     button,a
         position: absolute
         bottom: 5px
@@ -136,6 +137,7 @@ header.visible-xs
     color: white
     padding-top: 7vh
     padding-bottom: 7vh 
+    font-family: $fonts
 
 img.max-width
     width: 100%
@@ -152,6 +154,7 @@ img.max-width-res
     padding-top: 7vh
     padding-bottom: 7vh 
     background-color: white
+    font-family: $fonts
     .text-right
         text-align: right
     .text-center
@@ -170,7 +173,8 @@ img.max-width-res
             position: absolute
             box-sizing: border-box
             background-color: #ddd
-            border: 1px solid #bdc3c7
+            border: 5px solid #bdc3c7
+            padding: 20px
             img
                 border-radius: 8px 
                 display: block
@@ -182,17 +186,12 @@ img.max-width-res
     div.container.hidden-xs.hidden-sm
         div 
             width: 100/3 *1%
-            border-width: 10px
-            padding: 20px
 
     div.container.hidden-xs.hidden-md
         div 
             width: 50%
-            border-width: 7px
-            padding: 20px
             
     div.container.hidden-sm.hidden-md
-        position: static
         div 
             position: static
             width: 100%
@@ -200,4 +199,3 @@ img.max-width-res
             margin-left: auto
             margin-right: auto
             margin-bottom: 30px
-            padding: 20px

@@ -76,10 +76,10 @@ header {
 header div {
   height: 8vh;
   background-color: black;
-  font-size: 5vh;
-  color: white;
   float: left;
   font-family: Ul;
+  font-size: 5vh;
+  color: white;
 }
 
 header img {
@@ -120,9 +120,9 @@ header img:active {
 
 .mobileNav a {
   height: 70px;
-  font-size: 40px;
   text-align: center;
   height: 5vh;
+  font-size: 40px;
   font-family: Ul;
   font-size: 3vh;
   color: #444;
@@ -160,6 +160,7 @@ header img:active {
   height: 950px;
   height: 100vh;
   z-index: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #header-image button, #header-image a {
@@ -185,6 +186,7 @@ header img:active {
   color: white;
   padding-top: 7vh;
   padding-bottom: 7vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img.max-width {
@@ -208,6 +210,7 @@ img.max-width-res {
   padding-top: 7vh;
   padding-bottom: 7vh;
   background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #About-Me .text-right {
@@ -237,7 +240,8 @@ img.max-width-res {
   position: absolute;
   box-sizing: border-box;
   background-color: #ddd;
-  border: 1px solid #bdc3c7;
+  border: 5px solid #bdc3c7;
+  padding: 20px;
 }
 
 #Projects div.container div img {
@@ -252,18 +256,10 @@ img.max-width-res {
 
 #Projects div.container.hidden-xs.hidden-sm div {
   width: 33.33333%;
-  border-width: 10px;
-  padding: 20px;
 }
 
 #Projects div.container.hidden-xs.hidden-md div {
   width: 50%;
-  border-width: 7px;
-  padding: 20px;
-}
-
-#Projects div.container.hidden-sm.hidden-md {
-  position: static;
 }
 
 #Projects div.container.hidden-sm.hidden-md div {
@@ -273,5 +269,4 @@ img.max-width-res {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding: 20px;
 }
