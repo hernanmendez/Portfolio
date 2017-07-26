@@ -10,11 +10,11 @@
 
 <body>
     <header class="container-fluid visible-md visible-lg">
-        <div class="name"><span>Hernan</span></div>
+        <div class="name">Hernan</div>
         <nav>
-            <a href="#skills" ><button>My Skills</button></a>
-            <a href="#About-Me" ><button>About Me</button></a>
-            <a href="#Projects" ><button>Projects</button></a>
+            <a href="#skills">My Skills</a>
+            <a href="#About-Me">About Me</a>
+            <a href="#Projects">Projects</a>
         </nav>
     </header>
     <header class="container-fluid visible-xs">
@@ -27,293 +27,423 @@
     </header>
 
     <div class="mobileNav hidden-sm hidden-md hidden-lg">
-            <br />
-            <a href="#skills" type=button>My Skills</a>
-            <a href="#About-Me" type=button>About Me</a>
-            <a href="#Projects" type=button>Projects</a>
+        <br />
+        <a href="#skills" type=button>My Skills</a>
+        <a href="#About-Me" type=button>About Me</a>
+        <a href="#Projects" type=button>Projects</a>
     </div>
     <div class="mobileNav hidden-xs hidden-md hidden-lg">
-            <br />
-            <a href="#skills" type=button>My Skills</a>
-            <a href="#About-Me" type=button>About Me</a>
-            <a href="#Projects" type=button>Projects</a>
+        <br />
+        <a href="#skills" type=button>My Skills</a>
+        <a href="#About-Me" type=button>About Me</a>
+        <a href="#Projects" type=button>Projects</a>
     </div>
 
     <div id='header-image'>
-         <a href='https://www.codejobs.biz/public/images/blog/original/4e195de8b66c994.gif' type="button" id="credit">Gif</a>
-         <button id='stopGif'>Stop/Play Gif</button>
+        <h1 class='name'>Hello <br/> I'm Hernan</h1>
+        <a href='https://www.codejobs.biz/public/images/blog/original/4e195de8b66c994.gif' type="button" id="credit">Gif</a>
+        <button id='stopGif'>Stop/Play Gif</button>
     </div>
-        <div class='black-bg' id='skills'>
-            <div class="container">
-                <div class="col-xs-12 col-md-7">
-                    <h1>My Skills</h1>
-                    <h3>General</h3>
-                    <p>
-                        I'm used to using Git CLI and Github, the text editor I commonly use is VSCode but I've worked with Atom Before
-                    </p>
-                    <br/>
-                    <h3>Front-End</h3>
-                    <p>
-                        Aside from the classic HTML5,CSS3 and JS ecmascript6
-                        <br/>
-                        I have several Projects using bootstrap, SASS, jquery, D3 and most importantly React and redux
-                        <br/>
-                        I would say that my strongest point is on programming languages like javascript, Python and C++ rather than design
-                    </p>
-                    <br/>
-                    <h3>Back-End and AI</h3>
-                    <p>
-                        Coming soon...
-                    </p>
-                </div>
-                <div class="hidden-xs hidden-sm col-md-5">
-                    <img src="./images/GitHub.png" alt="GitHub" class='max-width' />
-                </div>
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 hidden-md hidden-lg">
-                    <img src="./images/GitHub.png" alt="GitHub" class='max-width-res' />
-                </div>
-            </div>
-        </div>
-        <div class='container-fluid' id='About-Me'>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                <h1 class="text-center">About Me</h1>
-                <p class="text-center">
-                    I Would say I'm an Ambivert, I have no problems meeting new people and talkin with them, but I also like
-                    having my own space, I'm passionate about coding, of course, and I'm self-taught 
+    <div class='black-bg' id='skills'>
+        <div class="container">
+            <div class="col-xs-12 col-md-7">
+                <h1>My Skills</h1>
+                <h3>General</h3>
+                <p>
+                    I'm used to version control, I personally use Git CLI and Github, the text editor I know and love is VSCode but I've worked with Atom Before
+                </p>
+                <p>
+                    I also have experience working with python and C++, and I'm interested on learning PHP, and Go
                 </p>
                 <br/>
-                <p class="text-center">
-                    My Hobbies are mainly on the scientific side of things, I like everything from Quantum Mechanics to Biology
-                    and I'm interested on the future and I would like to be a part of the group that helps building it, and I think
-                    that's why I like coding so much
+                <h3>Front-End</h3>
+                <p>
+                    Aside from the classic HTML5,CSS3 and JS es6
+                    <br/> I have several Projects using bootstrap, SASS, jquery, D3 and most importantly React, redux and react router, and I want to learn React Native too, 
+                    <br/> I would say that my strongest point is on programming, rather than design, but I like to keep updating my CSS skills, for example, I like flexbox
                 </p>
                 <br/>
-                <p class="text-center">
-                    And finally I would say that what takes me out of bed everyday is that, the idea that I'm helping to create a 
-                    better future not just for me, but for everybody around me too
+                <h3>Back-End and AI</h3>
+                <p>
+                    I have some knowledge working with Node.js but for the most part...
+                </p>
+                <p>
+                    Coming soon...
                 </p>
             </div>
+            <div class="hidden-xs hidden-sm col-md-5">
+                <img src="./images/GitHub.png" alt="GitHub" class='max-width' />
+            </div>
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 hidden-md hidden-lg">
+                <img src="./images/GitHub.png" alt="GitHub" class='max-width-res' />
             </div>
         </div>
-        <div id="Projects">
-            <h1>Projects</h1>
-            <div class="container hidden-xs hidden-sm">
-                <div>
-                    <img src="./images/ForceGraph.png">
-                    <h3>Force directed Graph</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/heatmap.png">
-                    <h3>Heatmap</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/gameoflife.png">
-                    <h3>Game of life</h3>
-                    <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/leaderboard.png">
-                    <h3>FreeCodeCamp LeaderBoard</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/roguelikegame.png">
-                    <h3>Roguelike Game React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/recipes.png">
-                    <h3>Recipe Holder React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Recipes">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/scatterplotgraph.png">
-                    <h3>D3 Scatterplot Graph</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/maps.png">
-                    <h3>Google Maps - meteorite landings</h3>
-                    <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/barchart.png">
-                    <h3>Bar Chart</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/wikipedia.png">
-                    <h3>wikipedia Viewer</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/TicTacToe.png">
-                    <h3>Tic Tac Toe Game</h3>
-                    <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/weather.png">
-                    <h3>Get Weather</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Quote Generator.png">
-                    <h3>Quote Generator</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Tribute Project.png">
-                    <h3>Tribute Page</h3>
-                    <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a></p>
-                </div>
+    </div>
+    <div class='container-fluid' id='About-Me'>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <h1>About Me</h1>
+            <p>
+                I Would say I'm an Ambivert, I have no problems meeting new people and talkin with them, but I also like having my own space, 
+                I'm passionate about coding, of course, and I'm self-taught
+            </p>
+            <br/>
+            <p>
+                My Hobbies are mainly on the scientific side of things. I like everything from Quantum Mechanics to Biology and I'm interested
+                on the future and I would like to be a part of the group that helps building it. and I think that's why I
+                like coding so much, that what takes me out of the bed everyday 
+            </p>
+            <br/>
+            <p>
+                I like to be part of open-source Projects, I think it's fun and you can meet interesting people. It's also good to help others
+            </p>
+        </div>
+    </div>
+    </div>
+    <div id="Projects">
+        <h1>Projects</h1>
+        <div class="container hidden-xs hidden-sm">
+            <div>
+                <img src="./images/ForceGraph.png">
+                <h3>Force directed Graph</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a>
+                </p>
             </div>
-            <div class="container hidden-xs hidden-md hidden-lg">
-                <div>
-                    <img src="./images/ForceGraph.png">
-                    <h3>Force directed Graph</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/heatmap.png">
-                    <h3>Heatmap</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/gameoflife.png">
-                    <h3>Game of life</h3>
-                    <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/leaderboard.png">
-                    <h3>FreeCodeCamp LeaderBoard</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/roguelikegame.png">
-                    <h3>Roguelike Game React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/recipes.png">
-                    <h3>Recipe Holder React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Recipes">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/scatterplotgraph.png">
-                    <h3>D3 Scatterplot Graph</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/maps.png">
-                    <h3>Google Maps - meteorite landings</h3>
-                    <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/barchart.png">
-                    <h3>Bar Chart</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/wikipedia.png">
-                    <h3>wikipedia Viewer</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/TicTacToe.png">
-                    <h3>Tic Tac Toe Game</h3>
-                    <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/weather.png">
-                    <h3>Get Weather</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Quote Generator.png">
-                    <h3>Quote Generator</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Tribute Project.png">
-                    <h3>Tribute Page</h3>
-                    <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a></p>
-                </div>
+            <div>
+                <img src="./images/heatmap.png">
+                <h3>Heatmap</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a>
+                </p>
             </div>
-            <div class="container hidden-sm hidden-md hidden-lg">
-                <div>
-                    <img src="./images/ForceGraph.png">
-                    <h3>Force directed Graph</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/heatmap.png">
-                    <h3>Heatmap</h3>
-                    <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/gameoflife.png">
-                    <h3>Game of life</h3>
-                    <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/leaderboard.png">
-                    <h3>FreeCodeCamp LeaderBoard</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/roguelikegame.png">
-                    <h3>Roguelike Game React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/recipes.png">
-                    <h3>Recipe Holder React</h3>
-                    <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Recipes">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/scatterplotgraph.png">
-                    <h3>D3 Scatterplot Graph</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/maps.png">
-                    <h3>Google Maps - meteorite landings</h3>
-                    <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/barchart.png">
-                    <h3>Bar Chart</h3>
-                    <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/wikipedia.png">
-                    <h3>wikipedia Viewer</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/TicTacToe.png">
-                    <h3>Tic Tac Toe Game</h3>
-                    <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/weather.png">
-                    <h3>Get Weather</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Quote Generator.png">
-                    <h3>Quote Generator</h3>
-                    <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a></p>
-                </div>
-                <div>
-                    <img src="./images/Tribute Project.png">
-                    <h3>Tribute Page</h3>
-                    <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/><a href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a></p>
-                </div>
+            <div>
+                <img src="./images/gameoflife.png">
+                <h3>Game of life</h3>
+                <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/leaderboard.png">
+                <h3>FreeCodeCamp LeaderBoard</h3>
+                <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/roguelikegame.png">
+                <h3>Roguelike Game React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/recipes.png">
+                <h3>Recipe Holder React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Recipes">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/scatterplotgraph.png">
+                <h3>D3 Scatterplot Graph</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/maps.png">
+                <h3>Google Maps - meteorite landings</h3>
+                <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/barchart.png">
+                <h3>Bar Chart</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/wikipedia.png">
+                <h3>wikipedia Viewer</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/TicTacToe.png">
+                <h3>Tic Tac Toe Game</h3>
+                <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/weather.png">
+                <h3>Get Weather</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Quote Generator.png">
+                <h3>Quote Generator</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Tribute Project.png">
+                <h3>Tribute Page</h3>
+                <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a>
+                </p>
             </div>
         </div>
+        <div class="container hidden-xs hidden-md hidden-lg">
+            <div>
+                <img src="./images/ForceGraph.png">
+                <h3>Force directed Graph</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/heatmap.png">
+                <h3>Heatmap</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/gameoflife.png">
+                <h3>Game of life</h3>
+                <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/leaderboard.png">
+                <h3>FreeCodeCamp LeaderBoard</h3>
+                <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/roguelikegame.png">
+                <h3>Roguelike Game React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/recipes.png">
+                <h3>Recipe Holder React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Recipes">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/scatterplotgraph.png">
+                <h3>D3 Scatterplot Graph</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/maps.png">
+                <h3>Google Maps - meteorite landings</h3>
+                <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/barchart.png">
+                <h3>Bar Chart</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/wikipedia.png">
+                <h3>wikipedia Viewer</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/TicTacToe.png">
+                <h3>Tic Tac Toe Game</h3>
+                <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/weather.png">
+                <h3>Get Weather</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Quote Generator.png">
+                <h3>Quote Generator</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Tribute Project.png">
+                <h3>Tribute Page</h3>
+                <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a>
+                </p>
+            </div>
+        </div>
+        <div class="container hidden-sm hidden-md hidden-lg">
+            <div>
+                <img src="./images/ForceGraph.png">
+                <h3>Force directed Graph</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Force-Graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Force-Graph">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/heatmap.png">
+                <h3>Heatmap</h3>
+                <p>Technologies used: HTML, SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-HeatMap/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-HeatMap">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/gameoflife.png">
+                <h3>Game of life</h3>
+                <p>Technologies used: HTML, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Game-of-life/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Game-of-life">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/leaderboard.png">
+                <h3>FreeCodeCamp LeaderBoard</h3>
+                <p>Technologies used: HTML, CSS, Javascript, Redux.js<br/><a href="https://hernanmendez.github.io/Leaderboard/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Leaderboard">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/roguelikegame.png">
+                <h3>Roguelike Game React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/React-Roguelike-Game/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/React-Roguelike-Game">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/recipes.png">
+                <h3>Recipe Holder React</h3>
+                <p>Technologies used: HTML, CSS, Javascript, React.js<br/><a href="https://hernanmendez.github.io/Recipes/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Recipes">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/scatterplotgraph.png">
+                <h3>D3 Scatterplot Graph</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-Scatterplot-graph/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-Scatterplot-graph">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/maps.png">
+                <h3>Google Maps - meteorite landings</h3>
+                <p>Technologies used: Javascript<br/><a href="https://hernanmendez.github.io/Map-Google-Map-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Map-Google-Map-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/barchart.png">
+                <h3>Bar Chart</h3>
+                <p>Technologies used: SVG, Javascript, D3.js<br/><a href="https://hernanmendez.github.io/D3-VizData-with-a-Bar-Chart/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/D3-VizData-with-a-Bar-Chart">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/wikipedia.png">
+                <h3>wikipedia Viewer</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/wikipedia-API/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/wikipedia-API">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/TicTacToe.png">
+                <h3>Tic Tac Toe Game</h3>
+                <p>Technologies used: HTML, Javascript<br/><a href="https://hernanmendez.github.io/TIC-TAC-TOE-GAME/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/TIC-TAC-TOE-GAME">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/weather.png">
+                <h3>Get Weather</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/get-Weather/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/get-Weather">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Quote Generator.png">
+                <h3>Quote Generator</h3>
+                <p>Technologies used: HTML, CSS, Javascript<br/><a href="https://hernanmendez.github.io/Quote-Generator/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Quote-Generator">GitHub Repo</a>
+                </p>
+            </div>
+            <div>
+                <img src="./images/Tribute Project.png">
+                <h3>Tribute Page</h3>
+                <p>Technologies used: Bootstrap,SASS,HTML,CSS<br/><a href="https://hernanmendez.github.io/Tribute-Page/">Visit the Project!</a><br/>
+                    <a
+                        href="https://github.com/hernanmendez/Tribute-Page">GitHub Repo</a>
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

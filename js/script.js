@@ -8,13 +8,9 @@ $('#sm-img').click(function(){
     $('.mobileNav.hidden-xs').slideToggle();
 });
 
-var check = true;
 $('#stopGif').click(function(){
-    if(check)
-    $('#header-image').css('background-image','url("./images/stop.gif")');
-    else
-    $('#header-image').css('background-image','url("./images/js.gif")'); 
-    check = !checks
+    console.log('hey')
+    $('#header-image').toggleClass('stop')
 });
 
 var $containerProjectMD = $('#Projects div.container.hidden-xs.hidden-sm')

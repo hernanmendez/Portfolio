@@ -12,65 +12,49 @@ body {
   background-color: #bdc3c7;
 }
 
-div.name {
-  height: 10vh;
-  float: left;
-  background-color: black;
-}
-
-div.name span {
-  font-family: Ul;
-  font-size: 7vh;
-  color: white;
-  font-weight: lighter;
-}
-
 header {
-  height: 100px;
-  height: 7vh;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  width: 100%;
-  z-index: 3;
-}
-
-header nav {
-  float: right;
-  margin: 0;
-}
-
-header nav a {
-  color: black;
-}
-
-header nav a button {
-  width: 15vw;
-  height: 7vh;
-  border-width: 0;
-  background-color: inherit;
-  margin: 0;
-  font-family: Ul;
-  font-weight: lighter;
-  font-size: 3vh;
-}
-
-header nav a button:hover {
-  background-color: #ccc;
-}
-
-header nav a button:active {
-  background-color: #aaa;
-}
-
-header {
-  height: 100px;
   height: 6vh;
   position: fixed;
   top: 0;
   background-color: white;
   width: 100%;
   z-index: 3;
+}
+
+header div.name {
+  height: 10vh;
+  background-color: black;
+  padding: 3px;
+  font-family: Ul;
+  font-size: 7vh;
+  color: white;
+  font-weight: lighter;
+}
+
+header nav {
+  float: right;
+  display: flex;
+  margin: 0;
+  width: 50%;
+  height: 6vh;
+}
+
+header nav a {
+  flex: 1;
+  text-align: center;
+  color: black;
+  border-width: 0;
+  background-color: inherit;
+  margin: 0;
+  font-family: Ul;
+  font-size: 3vh;
+  color: #555;
+}
+
+header nav a:hover {
+  background-color: #ddd;
+  text-decoration: none;
+  color: #555;
 }
 
 header div {
@@ -86,14 +70,6 @@ header img {
   float: right;
   height: 6vh;
   background-color: inherit;
-}
-
-header img:hover {
-  background-color: #ccc;
-}
-
-header img:active {
-  background-color: #aaa;
 }
 
 @media (orientation: landscape) {
@@ -131,14 +107,6 @@ header img:active {
   display: block;
 }
 
-.mobileNav a:hover {
-  background-color: #ccc;
-}
-
-.mobileNav a:active {
-  background-color: #aaa;
-}
-
 @media (orientation: landscape) {
   .mobileNav.hidden-sm {
     top: 11vh;
@@ -154,7 +122,6 @@ header img:active {
   background-color: #f8da59;
   background-image: url("../images/js.gif");
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   height: 950px;
@@ -179,6 +146,43 @@ header img:active {
 
 #header-image #stopGif {
   left: 5px;
+}
+
+.stop {
+  background-image: url("../images/stop.gif");
+}
+
+h1.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+  position: absolute;
+  top: 75px;
+  top: 20vh;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0px 0px 25px black;
+}
+
+@media (min-width: 1920px) {
+  h1.name {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1.name {
+    font-size: 3.5em;
+    top: 110px;
+    top: 30vh;
+  }
+}
+
+@media (max-width: 500px) {
+  h1.name {
+    font-size: 3em;
+  }
 }
 
 .black-bg {
@@ -207,18 +211,18 @@ img.max-width-res {
 }
 
 #About-Me {
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-top: 5vh;
+  padding-bottom: 9vh;
   background-color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#About-Me .text-right {
-  text-align: right;
+#About-Me h1 {
+  text-align: center;
 }
 
-#About-Me .text-center {
-  text-align: center;
+#About-Me p {
+  text-align: justify;
 }
 
 #Projects {
