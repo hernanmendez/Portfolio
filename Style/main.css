@@ -39,7 +39,7 @@ header nav {
   height: 6vh;
 }
 
-header nav a {
+header nav button {
   flex: 1;
   text-align: center;
   color: black;
@@ -51,7 +51,7 @@ header nav a {
   color: #555;
 }
 
-header nav a:hover {
+header nav button:hover {
   background-color: #ddd;
   text-decoration: none;
   color: #555;
@@ -210,18 +210,18 @@ img.max-width-res {
   }
 }
 
-#About-Me {
+#about {
   padding-top: 5vh;
   padding-bottom: 9vh;
   background-color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#About-Me h1 {
+#about h1 {
   text-align: center;
 }
 
-#About-Me p {
+#about p {
   text-align: justify;
 }
 

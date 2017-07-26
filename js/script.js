@@ -177,5 +177,18 @@ $($containerProjectSM.children()).each(function(){
     topsSM[index] += parseInt($(this).css('height'))
 })
 }
-window.onload = resize;
-$(window).resize(resize);
+
+$('.skillsBTN').click(function(){
+    window.scrollTo(0,$('#skills').offset().top)
+})
+
+$('.aboutBTN').click(function(){
+    window.scrollTo(0,$('#about').offset().top)
+})
+
+$('.projectsBTN').click(function(){
+    window.scrollTo(0,$('#Projects').offset().top)
+})
+
+window.onload = resize
+$(window).resize(resize)
