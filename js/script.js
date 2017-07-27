@@ -190,5 +190,6 @@ $('.projectsBTN').click(function(){
     window.scrollTo(0,$('#Projects').offset().top)
 })
 
+resize()
 window.onload = resize
 $(window).resize(resize)

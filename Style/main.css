@@ -94,7 +94,10 @@ header img {
   z-index: 2;
 }
 
-.mobileNav a {
+.mobileNav button {
+  background-color: #eee;
+  border: none;
+  width: 100%;
   height: 70px;
   text-align: center;
   height: 5vh;
@@ -102,8 +105,7 @@ header img {
   font-family: Ul;
   font-size: 3vh;
   color: #444;
-  font-weight: lighter;
-  border-radius: 0;
+  font-weight: light;
   display: block;
 }
 
